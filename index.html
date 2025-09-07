@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/201cd847aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="contaner">
+            <nav>
+                <img src="logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello!</p>
+                <h1>i'm Anwesha Sarma </h1>
+                <p>Aspiring software engineer currently in the 7th semester of B.Tech in Computer Science and Engineering.
+                </p>
+            </div>
+        </div>
+    </div>
+<!------------about------------->
+    <div id="about">
+        <div class="contaner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpeg" class="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub title">About me</h1>
+                    <p>
+                         I am an aspiring engineering student with a deep passion for coding, particularly in frontend development.
+                         My ambition is to become a successful software engineer.
+                    </p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('Certificate')">Certificate</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>programming languages</span><br>java , C, javascript</li>
+                             <li><span>data structure and algorithm</span><br>java</li>
+                              <li><span>frontend web development</span><br>HTML,CSS,Javascripts</li>
+                               <li><span>Database management system</span><br>MYSQL</li>
+                               <li><span>object oriented programming language</span><br> Java</li>
+                              
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Certificate">
+                        <ul>
+                            <li><span>Accenture Nordics Consultant Job Simulation on Forage</span><br>Improving thier mobile app ,june 2025</li>
+                             <li><span>Full stack web development</span><br>By Ardent computechPvt Ltd</li>
+                              <li><span>Python with Django</span><br>By Ardent computechPvt Ltd</li>
+                               <li><span>Internet of Things(IOT)</span><br>By Ardent computechPvt Ltd</li>
+                               
+                              
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>BTECH in computer science and engineering</span><br>Dr. sudhir chandra sur institute of technology and sports complex,2026</li>
+                             <li><span>Higher Secondary Education</span><br>Kendriya Vidyalaya Cossipore, 2022</li>
+                              <li><span>Secondary Education</span><br>Kendriya Vidyalaya Cossipore, 2020</li>
+                               
+                              
+                        </ul>
+                    </div>
+                    
+                    
+            </div>
+        </div>
+    </div>
+        
+</header>
+<!------------------services------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web design</h2>
+                <p>I create simple, clean and responsive website that work well on moblie and desktop.I focus on making designs easy to use and visually appealing.</p>
+                <a href="#">Learn more</a>
+            </div>
+        <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App design</h2>
+            <p>Making user-friendly and modernmobile app interfaces with a focus on simplicity and smooth user experience.</p>
+            <a href="#">Learn more</a>
+        </div>
+        </div>
+    </div>
+</div>
+<!--------------------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="my work.jpg">
+                <div class="layer">
+                    <h3> Web Dev</h3>
+                    <p>The website contains information of the individual to showcase their idea through website, that were made by them itself.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work2.png">
+                <div class="layer">
+                    <h3> Wheather App</h3>
+                    <p>This group project was created for BCT training held in our college to demonstrate API integration and responsive UI design.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+
+</div>
+<!--------------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact Me </h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sarmaanwesha8@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9475938594</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-linkedin"></i></a>
+                    
+                </div>
+                <a href="resume(n).pdf"Download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email"required>
+                    <textarea name="message" rows="6"placeholder="your message"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+         <p>copyright © 2025 [Anwesha Sarma]<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx4w6oVDdLPUi_2rwUPqdevnd4c05BTWceuRazgBMHgTUlnSdw8Znrb77YJSd9_n-0R3w/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg =document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML ="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
